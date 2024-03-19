@@ -1,0 +1,23 @@
+﻿<Page x:Class="StatWizard.Pages.ResultsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StatWizard.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ResultsPage">
+
+    <Grid Background="White">
+        <TextBlock x:Name="LoadCompleteTextBlock" HorizontalAlignment="Left" Height="21" Margin="42,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="324" Text="-"/>
+        <TextBlock x:Name="SelectQueryTypeTextblock" HorizontalAlignment="Left" Height="21" Margin="42,78,0,0" TextWrapping="Wrap" Text="Please select a query type:" VerticalAlignment="Top" Width="324"/>
+        <Button x:Name="GeneralOverviewButton" Content="General Overview" HorizontalAlignment="Left" Height="21" Margin="42,121,0,0" VerticalAlignment="Top" Width="147" Click="GeneralOverviewButton_Click"/>
+        <Button x:Name="ByStoreButton" Content="By Store.." HorizontalAlignment="Left" Height="21" Margin="42,163,0,0" VerticalAlignment="Top" Width="147" Click="ByStoreButton_Click"/>
+        <Button x:Name="BySupplierButton" Content="By Supplier.." HorizontalAlignment="Left" Height="21" Margin="42,204,0,0" VerticalAlignment="Top" Width="147" Click="BySupplierButton_Click"/>
+        <Button x:Name="BySupplierTypeButton" Content="By Supplier Type.." HorizontalAlignment="Left" Height="21" Margin="42,245,0,0" VerticalAlignment="Top" Width="147" Click="BySupplierTypeButton_Click"/>
+        <Button x:Name="ByWeekButton" Content="By Week.." HorizontalAlignment="Left" Height="21" Margin="42,288,0,0" VerticalAlignment="Top" Width="147" Click="ByWeekButton_Click"/>
+        <Button x:Name="AdditionalStatsButton" Content="Additional Stats" HorizontalAlignment="Left" Height="21" Margin="42,331,0,0" VerticalAlignment="Top" Width="147" Click="AdditionalStatsButton_Click"/>
+
+
+    </Grid>
+</Page>

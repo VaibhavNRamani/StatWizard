@@ -1,0 +1,22 @@
+﻿<Page x:Class="StatWizard.Pages.FolderSelectPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StatWizard.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="FolderSelectPage">
+
+    <Grid Background="White">
+        <Button x:Name="ContinueButton" Content="Continue" HorizontalAlignment="Left" Height="21" Margin="692,390,0,0" VerticalAlignment="Top" Width="75" Click="ContinueButton_Click"/>
+        <TextBlock x:Name="SelectFolderTextBlock" HorizontalAlignment="Left" Height="21" Margin="23,51,0,0" TextWrapping="Wrap" Text="Please select a folder containing the .csv files to query:" VerticalAlignment="Top" Width="292"/>
+        <TextBlock x:Name="SelectFileTextBlock" HorizontalAlignment="Left" Height="21" Margin="23,91,0,0" TextWrapping="Wrap" Text="Please select a .csv file containing the store codes:" VerticalAlignment="Top" Width="292"/>
+        <Button x:Name="FolderSelectButton" Content="Select" HorizontalAlignment="Left" Height="21" Margin="692,51,0,0" VerticalAlignment="Top" Width="75" Click="FolderSelectButton_Click"/>
+        <TextBox x:Name="FolderDirectoryTextbox" HorizontalAlignment="Left" Height="21" Margin="320,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="367"/>
+        <Button x:Name="FileSelectButton" Content="Select" HorizontalAlignment="Left" Height="21" Margin="692,91,0,0" VerticalAlignment="Top" Width="75" Click="FileSelectButton_Click"/>
+        <TextBox x:Name="FileDirectoryTextbox" HorizontalAlignment="Left" Height="21" Margin="320,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="367"/>
+        <ProgressBar x:Name="LoadingProgressBar" HorizontalAlignment="Left" Height="21" Margin="23,390,0,0" VerticalAlignment="Top" Width="664" IsIndeterminate="True" Visibility="Hidden"/>
+
+    </Grid>
+</Page>
